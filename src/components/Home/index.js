@@ -10,7 +10,7 @@ const Home = () => {
   const jobArray = 'full stack developer'.split('')
 
   useEffect(() => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
   }, [])
