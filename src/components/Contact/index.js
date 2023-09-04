@@ -97,6 +97,8 @@ const Contact = () => {
           <br />
           Canada
           <br />
+          (Open to Relocate)
+          <br />
           <span>clem.alleynejr@gmail.com</span>
         </div>
         <div className='map-wrap'>
@@ -108,7 +110,7 @@ const Contact = () => {
             </MapContainer>
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type="ball-scale-multiple" />
     </>
   )
 }
