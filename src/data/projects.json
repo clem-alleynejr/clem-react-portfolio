@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "cover": "/projects/fitness_witness_cover.png",
+      "title": "Fitness Witness",
+      "description": "MongoDB, Express.js, React.js, Node",
+      "url": "https://fitness-witness-633d35ffb601.herokuapp.com/"
+    },
+    {
+      "cover": "/projects/moviesage_cover.png",
+      "title": "MovieSage",
+      "description": "Python, Django, PostgreSQL",
+      "url": "https://moviesage-f4cfba681d1e.herokuapp.com/"
+    },
+    {
+      "cover": "/projects/snowboarding_skills_cover.png",
+      "title": "Snowboarding Skills Tracker",
+      "description": "JavaScript, Express.js, MongoDB, EJS",
+      "url": "https://snowboarding-skills.herokuapp.com/"
+    },
+    {
+      "cover": "/projects/checkers_cover.png",
+      "title": "Checkers",
+      "description": "HTML, CSS, JavaScript",
+      "url": "https://clem-alleynejr.github.io/checkers/"
+    }
+  ]
+}
