@@ -6,7 +6,6 @@ import projectsData from '../../data/projects.json'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  console.log(projectsData)
 
   useEffect(() => {
     setTimeout(() => {

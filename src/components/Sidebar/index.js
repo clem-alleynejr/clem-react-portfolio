@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBars,
   faBriefcase,
+  faClose,
   faEnvelope,
   faHome,
   faUser,
@@ -14,9 +15,10 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
 
 const Sidebar = () => {
-  const [showNav, setShowNav] = useState(false)
+  const [showNav, setShowNav] = useState(false);
 
   return (
+    <>
     <div className="nav-bar">
       {/* <Link className="logo" to="/">
       <img src={LogoS} alt="logo" />
@@ -43,6 +45,7 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
         </NavLink>
+        <FontAwesomeIcon onClick={() => setShowNav(false)} icon={faClose} color='#ffd700' size='3x' className='close-icon' />
       </nav>
       <ul>
         <li>
@@ -69,9 +72,9 @@ const Sidebar = () => {
         icon={faBars}
         color="#ffd700"
         size="3x"
-        className="hamburger-icon"
-      />
+        className="hamburger-icon" />
     </div>
+    </>
   )
 }
 
