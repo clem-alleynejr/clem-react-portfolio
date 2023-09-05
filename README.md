@@ -1,7 +1,7 @@
 <div align="center" id="header">
 
-# 🏂 Clem Alleyne Portfolio
-#### [Live Site](https://clem-alleyne-portfolio.netlify.app) 
+# Clem Alleyne Portfolio
+#### [Click Here for Live Site](https://clem-alleyne-portfolio.netlify.app) 
 
 </div> 
  
