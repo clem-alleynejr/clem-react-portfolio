@@ -3,7 +3,7 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import Logo from './Logo'
+// import Logo from './Logo'
 import Loader from 'react-loaders'
 
 const Home = () => {
