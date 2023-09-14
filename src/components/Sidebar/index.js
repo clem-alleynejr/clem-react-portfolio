@@ -71,6 +71,7 @@ const Sidebar = () => {
               target="_blank"
               rel="noreferrer"
               href="https://www.linkedin.com/in/clem-alleyne/"
+              className='linkedin'
             >
               <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
             </a>
@@ -80,6 +81,7 @@ const Sidebar = () => {
               target="_blank"
               rel="noreferrer"
               href="https://github.com/clem-alleynejr"
+              className='github'
             >
               <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
             </a>

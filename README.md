@@ -20,6 +20,8 @@ Welcome to my software developer portfolio - Built with React!
 # 👞 Next Steps
 
 - More personalization
+    - Adding background image
+    - Changing colors
 - Responsive design for more devices
 
 
