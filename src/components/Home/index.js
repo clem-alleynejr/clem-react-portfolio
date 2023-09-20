@@ -46,6 +46,17 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+
+
+      
+
+      <div className="project-zone">
+
+      </div>
+
+
+
+
       {/* <Logo /> */}
     </div>
     <Loader type="ball-scale-multiple" />

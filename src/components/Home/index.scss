@@ -93,7 +93,14 @@
         transform: none;
         padding: 10px;
         box-sizing: border-box;
+        margin-top: 50px;
     }
+
+    h1 {
+      font-size: 40px;
+      white-space: nowrap;
+    }
+
 
     .flat-button {
         float: none;
