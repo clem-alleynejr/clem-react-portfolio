@@ -25,4 +25,3 @@ Welcome to my software developer portfolio - Built with React!
 - Responsive design for more devices
 
 
--test no-deploy
