@@ -14,6 +14,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 // import Logo from './Logo'
 import Loader from 'react-loaders'
+import projectsData from '../../data/projects.json'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -25,6 +26,34 @@ const Home = () => {
       setLetterClass('text-animate-hover')
     }, 4000)
   }, [])
+
+  const renderProjects = (projects) => {
+    return (
+      <div className="images-container">
+        {projects.map((project, idx) => {
+          return (
+            <div className="image-box" key={idx}>
+              <img
+                src={project.cover}
+                className="project-image"
+                alt="project"
+              />
+              <div className="content">
+                <p className="title">{project.title}</p>
+                <h4 className="description">{project.description}</h4>
+                <button
+                  className="btn"
+                  onClick={() => window.open(project.url)}
+                >
+                  View
+                </button>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    )
+  }
 
   return (
     <>
@@ -56,7 +85,6 @@ const Home = () => {
           </Link>
         </div>
 
-
         <div className="text-zone-about">
           <h1>
             <AnimatedLetters
@@ -82,14 +110,21 @@ const Home = () => {
             Mongoose, Bootstrap
           </p>
           <p>Database | PostgreSQL, MongoDB</p>
-          <p>Other | RESTful Routing JSON, GitHub, Trello, Figma</p>
+          <p>Other | AWS, RESTful Routing JSON, GitHub, Trello, Figma</p>
         </div>
 
+        <div className="text-zone-projects">
+          <h1 className="page-title">
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={'Projects'.split('')}
+              idx={15}
+            />
+          </h1>
+          <div>{renderProjects(projectsData.projects)}</div>
+        </div>
       </div>
 
-      <div className="project-zone">
-
-      </div>
       <Loader type="ball-scale-multiple" />
     </>
   )
