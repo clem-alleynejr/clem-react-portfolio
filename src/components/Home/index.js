@@ -121,7 +121,7 @@ const Home = () => {
               idx={15}
             />
           </h1>
-          <div>{renderProjects(projectsData.projects)}</div>
+          <div className='tiles'>{renderProjects(projectsData.projects)}</div>
         </div>
       </div>
 
