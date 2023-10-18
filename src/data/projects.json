@@ -3,26 +3,30 @@
     {
       "cover": "/projects/fitness_witness_cover.png",
       "title": "Fitness Witness",
-      "description": "MongoDB, Express.js, React.js, Node",
-      "url": "https://fitness-witness-633d35ffb601.herokuapp.com/"
+      "description": "MongoDB (NoSQL), Express.js, React.js, Node.js",
+      "url": "https://fitness-witness-633d35ffb601.herokuapp.com/",
+      "sourceCode": "https://github.com/clem-alleynejr/fitness-witness"
     },
     {
       "cover": "/projects/moviesage_cover.png",
       "title": "MovieSage",
-      "description": "Python, Django, PostgreSQL",
-      "url": "https://moviesage-f4cfba681d1e.herokuapp.com/"
+      "description": "Python, Django, PostgreSQL (SQL)",
+      "url": "https://moviesage-f4cfba681d1e.herokuapp.com/",
+      "sourceCode": "https://github.com/clem-alleynejr/moviesage"
     },
     {
       "cover": "/projects/snowboarding_skills_cover.png",
       "title": "Snowboarding Skills Tracker",
       "description": "JavaScript, Express.js, MongoDB, EJS",
-      "url": "https://snowboarding-skills.herokuapp.com/"
+      "url": "https://snowboarding-skills.herokuapp.com/",
+      "sourceCode": "https://github.com/clem-alleynejr/snowboarding-skills"
     },
     {
       "cover": "/projects/checkers_cover.png",
       "title": "Checkers",
       "description": "HTML, CSS, JavaScript",
-      "url": "https://clem-alleynejr.github.io/checkers/"
+      "url": "https://clem-alleynejr.github.io/checkers/",
+      "sourceCode": "https://github.com/clem-alleynejr/checkers"
     }
   ]
 }

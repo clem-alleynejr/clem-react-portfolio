@@ -45,7 +45,13 @@ const Home = () => {
                   className="btn"
                   onClick={() => window.open(project.url)}
                 >
-                  View
+                  Open App
+                </button>
+                <button
+                  className="btn"
+                  onClick={() => window.open(project.sourceCode)}
+                >
+                  View GitHub Repository
                 </button>
               </div>
             </div>
@@ -104,7 +110,7 @@ const Home = () => {
             climber/inspector.
           </p>
           <br />
-          <p>Languages | JavaScript, TypeScript, C#, HTML, CSS, Python, EJS</p>
+          <p>Languages | JavaScript, TypeScript, HTML, CSS, Python, EJS</p>
           <p>
             Libraries and Frameworks | Express.js, Django, React.js, Node.js,
             Mongoose, Bootstrap
