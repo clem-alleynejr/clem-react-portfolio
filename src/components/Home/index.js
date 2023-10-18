@@ -6,8 +6,10 @@ import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCss3,
+  faGithub,
   faHtml5,
   faJsSquare,
+  faLinkedin,
   faNodeJs,
   faPython,
   faReact,
@@ -15,6 +17,7 @@ import {
 // import Logo from './Logo'
 import Loader from 'react-loaders'
 import projectsData from '../../data/projects.json'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -86,9 +89,38 @@ const Home = () => {
             />
           </h1>
 
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/clem-alleyne/"
+                className="linkedin"
+              >
+                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                <h2>LinkedIn</h2>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/clem-alleynejr"
+                className="github"
+              >
+                <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                <h2>GitHub</h2>
+              </a>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+              <h2>clem.alleynejr@gmail.com</h2>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faPhone} color="#4d4d4e" />
+              <h2>(780) 932-5363</h2>
+            </li>
+          </ul>
         </div>
 
         <div className="text-zone-about">
@@ -127,7 +159,7 @@ const Home = () => {
               idx={15}
             />
           </h1>
-          <div className='tiles'>{renderProjects(projectsData.projects)}</div>
+          <div className="tiles">{renderProjects(projectsData.projects)}</div>
         </div>
       </div>
 

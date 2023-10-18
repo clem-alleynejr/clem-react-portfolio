@@ -3,21 +3,21 @@
     {
       "cover": "/projects/fitness_witness_cover.png",
       "title": "Fitness Witness",
-      "description": "MongoDB (NoSQL), Express.js, React.js, Node.js",
+      "description": "JavaScript, React.js, Express.js (MVC), Node.js, MongoDB (NoSQL)",
       "url": "https://fitness-witness-633d35ffb601.herokuapp.com/",
       "sourceCode": "https://github.com/clem-alleynejr/fitness-witness"
     },
     {
       "cover": "/projects/moviesage_cover.png",
       "title": "MovieSage",
-      "description": "Python, Django, PostgreSQL (SQL)",
+      "description": "Python, Django (MVT), PostgreSQL (SQL)",
       "url": "https://moviesage-f4cfba681d1e.herokuapp.com/",
       "sourceCode": "https://github.com/clem-alleynejr/moviesage"
     },
     {
       "cover": "/projects/snowboarding_skills_cover.png",
       "title": "Snowboarding Skills Tracker",
-      "description": "JavaScript, Express.js, MongoDB, EJS",
+      "description": "JavaScript, Express.js (MVC), MongoDB (NoSQL), EJS",
       "url": "https://snowboarding-skills.herokuapp.com/",
       "sourceCode": "https://github.com/clem-alleynejr/snowboarding-skills"
     },
