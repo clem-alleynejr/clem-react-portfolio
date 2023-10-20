@@ -17,7 +17,11 @@ import {
 // import Logo from './Logo'
 import Loader from 'react-loaders'
 import projectsData from '../../data/projects.json'
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import {
+  faEnvelope,
+  faLocationDot,
+  faPhone,
+} from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -51,7 +55,7 @@ const Home = () => {
                   Open App
                 </button>
                 <button
-                  className="btn"
+                  className="btn gitHubButton"
                   onClick={() => window.open(project.sourceCode)}
                 >
                   View GitHub Repository
@@ -68,26 +72,30 @@ const Home = () => {
     <>
       <div className="container home-page">
         <div className="text-zone-home">
-          <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
-            <span className={`${letterClass} _14`}> </span>
-            {/* <img src={LogoTitle} alt="developer" /> */}
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={15}
-            />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={22}
-            />
-          </h1>
+          <section className="greeting-and-photo">
+            <h1 className="greeting">
+              <span className={letterClass}>H</span>
+              <span className={`${letterClass} _12`}>i,</span>
+              <br />
+              <span className={`${letterClass} _13`}>I</span>
+              <span className={`${letterClass} _14`}>'m</span>
+              <span className={`${letterClass} _14`}> </span>
+              {/* <img src={LogoTitle} alt="developer" /> */}
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={nameArray}
+                idx={15}
+              />
+              <br />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={jobArray}
+                idx={22}
+              />
+            </h1>
+
+            <img src="/images/profile-photo.jpg" className="photo"></img>
+          </section>
 
           <ul>
             <li>
@@ -116,14 +124,21 @@ const Home = () => {
               <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
               <h2>clem.alleynejr@gmail.com</h2>
             </li>
-            <li>
+            {/* <li>
               <FontAwesomeIcon icon={faPhone} color="#4d4d4e" />
               <h2>(780) 932-5363</h2>
+            </li> */}
+            <li>
+              <FontAwesomeIcon icon={faLocationDot} color="#4d4d4e" />
+              <h2>
+                Edmonton, Alberta <br />
+                (Open to Relocate)
+              </h2>
             </li>
           </ul>
         </div>
 
-        <div className="text-zone-about">
+        {/* <div className="text-zone-about">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -160,7 +175,7 @@ const Home = () => {
             />
           </h1>
           <div className="tiles">{renderProjects(projectsData.projects)}</div>
-        </div>
+        </div> */}
       </div>
 
       <Loader type="ball-scale-multiple" />
