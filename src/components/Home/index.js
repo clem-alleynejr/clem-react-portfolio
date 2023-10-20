@@ -138,7 +138,7 @@ const Home = () => {
           </ul>
         </div>
 
-        {/* <div className="text-zone-about">
+        <div className="text-zone-about">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -146,7 +146,7 @@ const Home = () => {
               idx={15}
             />
           </h1>
-          <p>
+          <p className='summary'>
             Having worked in the structural engineering industry and recently
             completing a rigorous full-stack software engineering intensive
             program, I aim to leverage my technical background to transition
@@ -156,17 +156,18 @@ const Home = () => {
             including project manager, structural analyzer/designer, and tower
             climber/inspector.
           </p>
-          <br />
-          <p>Languages | JavaScript, TypeScript, HTML, CSS, Python, EJS</p>
-          <p>
-            Libraries and Frameworks | Express.js, Django, React.js, Node.js,
-            Mongoose, Bootstrap
-          </p>
-          <p>Database | PostgreSQL, MongoDB</p>
-          <p>Other | AWS, RESTful Routing JSON, GitHub, Trello, Figma</p>
+          <div className="skills">
+            <p>Languages | JavaScript, TypeScript, HTML, CSS, Python, EJS</p>
+            <p>
+              Libraries and Frameworks | Express.js, Django, React.js, Node.js,
+              Mongoose, Bootstrap
+            </p>
+            <p>Database | PostgreSQL, MongoDB</p>
+            <p>Other | AWS, RESTful Routing JSON, GitHub, Trello, Figma</p>
+          </div>
         </div>
 
-        <div className="text-zone-projects">
+        {/* <div className="text-zone-projects">
           <h1 className="page-title">
             <AnimatedLetters
               letterClass={letterClass}

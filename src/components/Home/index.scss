@@ -1,5 +1,4 @@
 .home-page {
-  // position: relative;
   display: grid;
   grid-template:
     [row1-start] 'home projects' 1fr [row1-end]
@@ -25,13 +24,6 @@
         border-radius: 48px;
       }
     }
-
-    // position: absolute;
-    // left: 10%;
-    // top: 150px;
-    // transform: translateY(-50%);
-    // width: 40%;
-    // max-height: 90%;
 
     ul {
       display: flex;
@@ -69,53 +61,7 @@
         margin: 0;
         margin-left: 12px;
       }
-
-      
-
-      svg.svg-inline--fa.fa-linkedin {
-        margin-right: 0px;
-      }
     }
-
-    // li {
-    //   display: inline-block;
-    //   margin-right: 20px;
-
-    //   &:hover svg {
-    //     color: red;
-    //   }
-
-    //   FontAwesomeIcon,
-    //   h2 {
-    //     display: inline-block;
-    //   }
-
-    //   h2 {
-    //     margin-left: 10px;
-    //   }
-
-    //   .linkedin {
-    //     padding: 7px 0;
-    //     display: block;
-    //     font-size: 15px;
-    //     line-height: 16px;
-
-    //     &:hover svg {
-    //       color: #0072b1;
-    //     }
-    //   }
-
-    //   .github {
-    //     padding: 7px 0;
-    //     display: block;
-    //     font-size: 15px;
-    //     line-height: 16px;
-
-    //     &:hover svg {
-    //       color: #e8eaea;
-    //     }
-    //   }
-    // }
   }
 
   .text-zone-projects {
@@ -241,16 +187,16 @@
 
   .text-zone-about {
     grid-area: about;
-    // position: absolute;
-    left: 10%;
-    bottom: 40px;
-    width: 40%;
+
+    .skills {
+      margin-top: 25px;
+    }
+
     p {
       font-style: 13px;
       color: #fff;
       font-family: sans-serif;
       font-weight: 300;
-      min-width: fit-content;
       animation: pulse 1s;
       font-size: 12px;
 
