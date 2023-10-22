@@ -97,45 +97,47 @@ const Home = () => {
             <img src="/images/profile-photo.jpg" className="photo"></img>
           </section>
 
-          <ul>
-            <li>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.linkedin.com/in/clem-alleyne/"
-                className="linkedin"
-              >
-                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-                <h2>LinkedIn</h2>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/clem-alleynejr"
-                className="github"
-              >
-                <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-                <h2>GitHub</h2>
-              </a>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-              <h2>clem.alleynejr@gmail.com</h2>
-            </li>
-            {/* <li>
+          <div className="contacts">
+            <ul>
+              <li className='linkedin'>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/clem-alleyne/"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                  <h2>LinkedIn</h2>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/clem-alleynejr"
+                  className="github"
+                >
+                  <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                  <h2>GitHub</h2>
+                </a>
+              </li>
+
+              <li>
+                <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+                <h2>clem.alleynejr@gmail.com</h2>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faLocationDot} color="#4d4d4e" />
+                <h2>
+                  Edmonton, Alberta <br />
+                  (Open to Relocate)
+                </h2>
+              </li>
+              {/* <li>
               <FontAwesomeIcon icon={faPhone} color="#4d4d4e" />
               <h2>(780) 932-5363</h2>
             </li> */}
-            <li>
-              <FontAwesomeIcon icon={faLocationDot} color="#4d4d4e" />
-              <h2>
-                Edmonton, Alberta <br />
-                (Open to Relocate)
-              </h2>
-            </li>
-          </ul>
+            </ul>
+          </div>
         </div>
 
         <div className="text-zone-about">
@@ -146,7 +148,7 @@ const Home = () => {
               idx={15}
             />
           </h1>
-          <p className='summary'>
+          <p className="summary">
             Having worked in the structural engineering industry and recently
             completing a rigorous full-stack software engineering intensive
             program, I aim to leverage my technical background to transition
@@ -167,7 +169,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* <div className="text-zone-projects">
+        <div className="text-zone-projects">
           <h1 className="page-title">
             <AnimatedLetters
               letterClass={letterClass}
@@ -175,8 +177,8 @@ const Home = () => {
               idx={15}
             />
           </h1>
-          <div className="tiles">{renderProjects(projectsData.projects)}</div>
-        </div> */}
+          {renderProjects(projectsData.projects)}
+        </div>
       </div>
 
       <Loader type="ball-scale-multiple" />
