@@ -81,17 +81,21 @@ const Home = () => {
               <span className={`${letterClass} _14`}>'m</span>
               <span className={`${letterClass} _14`}> </span>
               {/* <img src={LogoTitle} alt="developer" /> */}
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={nameArray}
-                idx={15}
-              />
+              <span className="greeting-name">
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={nameArray}
+                  idx={15}
+                />
+              </span>
               <br />
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={jobArray}
-                idx={22}
-              />
+              <span className="greeting-job">
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={jobArray}
+                  idx={22}
+                />
+              </span>
             </h1>
 
             <img src="/images/profile-photo.jpg" className="photo"></img>
@@ -99,7 +103,7 @@ const Home = () => {
 
           <div className="contacts">
             <ul>
-              <li className='linkedin'>
+              <li className="linkedin">
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -109,23 +113,21 @@ const Home = () => {
                   <h2>LinkedIn</h2>
                 </a>
               </li>
-              <li>
+              <li className='github'>
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href="https://github.com/clem-alleynejr"
-                  className="github"
                 >
                   <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
                   <h2>GitHub</h2>
                 </a>
               </li>
-
-              <li>
+              <li className='email'>
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                 <h2>clem.alleynejr@gmail.com</h2>
               </li>
-              <li>
+              <li className='location'>
                 <FontAwesomeIcon icon={faLocationDot} color="#4d4d4e" />
                 <h2>
                   Edmonton, Alberta <br />
