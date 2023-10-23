@@ -25,7 +25,7 @@ import {
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = 'Clem Alleyne'.split('')
+  const nameArray = 'Clem Alleyne,'.split('')
   const jobArray = 'Full Stack Developer'.split('')
 
   useEffect(() => {
