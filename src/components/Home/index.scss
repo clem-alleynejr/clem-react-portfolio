@@ -1,5 +1,6 @@
 //mobile-first development
 
+@media (max-width: 374px) {
 .home-page {
   display: flex;
   flex-direction: column;
@@ -258,6 +259,275 @@
         &:hover .content {
           bottom: 0;
           background: transparent;
+        }
+      }
+    }
+  }
+}
+}
+
+@media (min-width: 374px) {
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  
+    .text-zone-home {
+      .greeting-and-photo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto 15px;
+  
+        h1 {
+          font-size: 25px;
+          color: #fff;
+  
+          span.text-animate-hover._13 {
+            margin-right: -0.18em;
+          }
+          span.text-animate._13 {
+            margin-right: -0.18em;
+          }
+  
+          .greeting-name {
+            span.text-animate-hover._16,
+            span.text-animate-hover._22 {
+              margin-right: -0.2em;
+            }
+  
+            span.text-animate-hover._21 {
+              margin-right: -0.2em;
+            }
+  
+            span.text-animate._16,
+            span.text-animate._22 {
+              margin-right: -0.2em;
+            }
+  
+            span.text-animate._21 {
+              margin-right: -0.2em;
+            }
+          }
+  
+          .greeting-job {
+            span.text-animate-hover._24,
+            span.text-animate-hover._25 {
+              margin-right: -0.2em;
+            }
+  
+            span.text-animate-hover._37 {
+              margin-right: -0.25em;
+            }
+  
+            span.text-animate._24,
+            span.text-animate._25 {
+              margin-right: -0.2em;
+            }
+  
+            span.text-animate._37 {
+              margin-right: -0.25em;
+            }
+          }
+        }
+        .photo {
+          width: 82px;
+          height: auto;
+          border-radius: 10px;
+        }
+      }
+  
+      .contacts {
+        ul {
+          display: grid;
+          grid-template:
+            [row1-start] 'linkedin email' auto [row1-end]
+            [row2-start] 'github location' auto [row2-end]
+            / auto auto;
+          list-style: none;
+          padding-left: 0px;
+          margin: auto 15px;
+          align-items: center;
+          justify-items: center;
+  
+          li {
+            h2 {
+              font-size: 12px;
+              color: #8d8d8d;
+            }
+          }
+  
+          .linkedin {
+            grid-area: linkedin;
+  
+            a {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+            }
+          }
+  
+          .email {
+            grid-area: email;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            padding-left: 10px;
+          }
+  
+          .github {
+            grid-area: github;
+  
+            a {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+            }
+          }
+  
+          .location {
+            grid-area: location;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  
+    .text-zone-about {
+      h1 {
+        font-size: 25px;
+        color: #fff;
+        margin: 15px 15px;
+      }
+      p {
+        font-style: 13px;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 300;
+        animation: pulse 1s;
+        font-size: 13px;
+        margin: 15px 15px;
+  
+        &:nth-of-type(1) {
+          animation-delay: 1.1s;
+        }
+      }
+    }
+  
+    .text-zone-projects {
+      border: 1px solid white;
+      border-radius: 10px;
+      position: relative;
+      width: calc(100% - 30px);
+      align-self: center;
+      margin: 15px;
+  
+      h1 {
+        font-size: 25px;
+        text-align: center;
+        color: #fff;
+        position: sticky;
+        top: 0;
+        background: #1a272e;
+        border-radius: 10px;
+        border: 1px solid white;
+        margin-top: 0;
+        z-index: 4;
+      }
+  
+      .images-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+  
+        .image-box {
+          position: relative;
+          border-radius: 10px;
+          overflow: hidden;
+          width: 95%;
+  
+          .project-image,
+          .content {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+          }
+  
+          .project-image {
+            z-index: 2;
+            border-radius: 10px;
+            object-fit: cover;
+          }
+  
+          .content {
+            position: absolute;
+            width: 100%;
+            z-index: 3;
+            background: rgba(0, 0, 0, 0.9);
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            bottom: -29px;
+  
+            .title {
+              margin-bottom: 0;
+              margin-top: 0;
+              margin-left: 5px;
+              color: #fff;
+              font-size: 22px;
+              font-weight: 500;
+              line-height: 24px;
+            }
+  
+            .description {
+              font-size: 10px;
+              color: #fff;
+              font-weight: 700;
+              margin-left: 5px;
+            }
+  
+            .btn {
+              border: 2px solid #ffd700;
+              font-size: 14px;
+              color: #fff;
+              background: transparent;
+              text-transform: uppercase;
+              font-weight: 700;
+              transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+              margin-bottom: 5px;
+              margin-left: 5px;
+            }
+  
+            .gitHubButton {
+              margin-left: 10px;
+            }
+          }
+  
+          &:after {
+            content: '';
+            background: linear-gradient(180deg, #ffd700, #000);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            opacity: 0;
+          }
+  
+          &:hover:after {
+            opacity: 0.85;
+          }
+  
+          &:hover .content {
+            bottom: 0;
+            background: transparent;
+          }
         }
       }
     }
