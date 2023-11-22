@@ -23,7 +23,7 @@ import {
   faPhone,
 } from '@fortawesome/free-solid-svg-icons'
 
-const Home = () => {
+const AboutProjects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = 'Clem Alleyne,'.split('')
   const jobArray = 'Full Stack Developer'.split('')
@@ -188,4 +188,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default AboutProjects

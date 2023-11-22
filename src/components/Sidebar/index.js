@@ -39,7 +39,7 @@ const Sidebar = () => {
             onClick={() => setShowNav(false)}
             activeclassname="active"
             className="about-link"
-            to="/about"
+            to="/about-projects"
           >
             <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             About Me / <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" /> Projects

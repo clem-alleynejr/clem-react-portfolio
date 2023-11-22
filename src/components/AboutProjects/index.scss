@@ -795,10 +795,11 @@
 // }
 
 @media (min-width: 1024px) {
+
   .home-page {
     display: grid;
     grid-template:
-      [row1-start] 'home projects' 1fr [row1-end]
+      [row1-start] 'home projects' auto [row1-end]
       [row2-start] 'about projects' 1fr [row2-end]
       / 1fr 1fr;
 
@@ -868,9 +869,13 @@
     }
 
     .text-zone-about {
+
+      h1 {
+        margin-top: 35px;
+      }
+
       grid-area: about;
       margin-left: 30px;
-      align-self: center;
 
       .summary {
         max-width: 658px;
@@ -882,7 +887,7 @@
 
       p {
         font-style: 13px;
-        color: #fff;
+        color: white;
         font-family: sans-serif;
         font-weight: 300;
         animation: pulse 1s;
@@ -1042,7 +1047,7 @@
     }
 
     h1 {
-      color: #fff;
+      color: red;
       font-size: 53px;
       margin: 0;
       font-family: 'Coolvetica';
@@ -1059,7 +1064,7 @@
     }
 
     h2 {
-      color: #8d8d8d;
+      color: white;
       margin-top: 20px;
       font-weight: 400;
       font-size: 11px;
