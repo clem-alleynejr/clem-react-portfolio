@@ -37,8 +37,8 @@ const Contact = () => {
 
   return (
     <>
-      <div className="container contact-page">
-        <div className="text-zone">
+      <main className="container contact-page">
+        <section className="text-zone">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -89,27 +89,29 @@ const Contact = () => {
               </ul>
             </form>
           </div>
-        </div>
-        <div className="info-map">
-          Clem Alleyne
-          <br />
-          Edmonton, Alberta
-          <br />
-          Canada
-          <br />
-          (Open to Relocate)
-          <br />
-          <span>clem.alleynejr@gmail.com</span>
-        </div>
-        <div className='map-wrap'>
+        </section>
+        <section className="map-zone">
+          <div className="info-map">
+            Clem Alleyne
+            <br />
+            Edmonton, Alberta
+            <br />
+            Canada
+            <br />
+            (Open to Relocate)
+            <br />
+            <span>clem.alleynejr@gmail.com</span>
+          </div>
+          <div className="map-wrap">
             <MapContainer center={[53.5461, -113.4937]} zoom={5}>
-                <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
-                <Marker position={[53.5461, -113.4937]}>
-                    <Popup>Currently located here :) Open to relocation</Popup>
-                </Marker>
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+              <Marker position={[53.5461, -113.4937]}>
+                <Popup>Currently located here :) Open to relocation</Popup>
+              </Marker>
             </MapContainer>
-        </div>
-      </div>
+          </div>
+        </section>
+      </main>
       <Loader type="ball-scale-multiple" />
     </>
   )

@@ -794,9 +794,9 @@
 //   }
 // }
 
-@media (min-width: 1024px) {
 
-  .home-page {
+
+  .home-about-projects-page {
     display: grid;
     grid-template:
       [row1-start] 'home projects' auto [row1-end]
@@ -809,6 +809,10 @@
       flex-direction: column;
       align-items: stretch;
       margin-left: 30px;
+
+      h1 {
+        color: white;
+      }
 
       .greeting-and-photo {
         display: flex;
@@ -871,7 +875,7 @@
     .text-zone-about {
 
       h1 {
-        margin-top: 35px;
+        margin-top: 22px;
       }
 
       grid-area: about;
@@ -903,13 +907,14 @@
       position: relative;
       grid-area: projects;
       margin-right: 30px;
-      margin-left: 44px;
+      margin-left: 15px;
       border: 1px solid white;
       border-radius: 10px;
       padding-left: 20px;
       padding-right: 20px;
       overflow: hidden;
-      width: 604px;
+      width: 87%;
+      height: 97%;
 
       .page-title {
         text-align: center;
@@ -1053,14 +1058,6 @@
       font-family: 'Coolvetica';
       font-weight: 400;
 
-      img {
-        width: 32px;
-        margin-left: 20px;
-        opacity: 0;
-        height: auto;
-        animation: rotateIn 1s linear both;
-        animation-delay: 1.4s;
-      }
     }
 
     h2 {
@@ -1093,4 +1090,4 @@
       }
     }
   }
-}
+

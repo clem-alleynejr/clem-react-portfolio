@@ -1,29 +1,19 @@
-import { Link } from 'react-router-dom'
-import LogoTitle from '../../assets/images/logo-s.png'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faCss3,
   faGithub,
-  faHtml5,
-  faJsSquare,
-  faLinkedin,
-  faNodeJs,
-  faPython,
-  faReact,
+  faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
-// import Logo from './Logo'
 import Loader from 'react-loaders'
 import projectsData from '../../data/projects.json'
 import {
   faEnvelope,
   faLocationDot,
-  faPhone,
 } from '@fortawesome/free-solid-svg-icons'
 
-const AboutProjects = () => {
+const HomeAboutProjects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = 'Clem Alleyne,'.split('')
   const jobArray = 'Full Stack Developer'.split('')
@@ -70,8 +60,9 @@ const AboutProjects = () => {
 
   return (
     <>
-      <div className="container home-page">
-        <div className="text-zone-home">
+      <div className="container home-about-projects-page">
+        
+        <main className="text-zone-home">
           <section className="greeting-and-photo">
             <h1 className="greeting">
               <span className={letterClass}>H</span>
@@ -80,7 +71,6 @@ const AboutProjects = () => {
               <span className={`${letterClass} _13`}>I</span>
               <span className={`${letterClass} _14`}>'m</span>
               <span className={`${letterClass} _14`}> </span>
-              {/* <img src={LogoTitle} alt="developer" /> */}
               <span className="greeting-name">
                 <AnimatedLetters
                   letterClass={letterClass}
@@ -97,11 +87,10 @@ const AboutProjects = () => {
                 />
               </span>
             </h1>
-
             <img src="/images/profile-photo.jpg" className="photo"></img>
           </section>
 
-          <div className="contacts">
+          <section className="contacts">
             <ul>
               <li className="linkedin">
                 <a
@@ -134,15 +123,11 @@ const AboutProjects = () => {
                   (Open to Relocate)
                 </h2>
               </li>
-              {/* <li>
-              <FontAwesomeIcon icon={faPhone} color="#4d4d4e" />
-              <h2>(780) 932-5363</h2>
-            </li> */}
             </ul>
-          </div>
-        </div>
+          </section>
+        </main>
 
-        <div className="text-zone-about">
+        <main className="text-zone-about">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -160,18 +145,18 @@ const AboutProjects = () => {
             including project manager, structural analyzer/designer, and tower
             climber/inspector.
           </p>
-          <div className="skills">
+          <section className="skills">
             <p>Languages | JavaScript, TypeScript, HTML, CSS, Python, EJS</p>
             <p>
               Libraries and Frameworks | Express.js, Django, React.js, Node.js,
               Mongoose, Bootstrap
             </p>
-            <p>Database | PostgreSQL, MongoDB</p>
+            <p>Database | SQL, PostgreSQL, NoSQL, MongoDB</p>
             <p>Other | AWS, RESTful Routing JSON, GitHub, Trello, Figma</p>
-          </div>
-        </div>
+          </section>
+        </main>
 
-        <div className="text-zone-projects">
+        <main className="text-zone-projects">
           <h1 className="page-title">
             <AnimatedLetters
               letterClass={letterClass}
@@ -180,12 +165,12 @@ const AboutProjects = () => {
             />
           </h1>
           {renderProjects(projectsData.projects)}
-        </div>
-      </div>
+        </main>
 
+      </div>
       <Loader type="ball-scale-multiple" />
     </>
   )
 }
 
-export default AboutProjects
+export default HomeAboutProjects
