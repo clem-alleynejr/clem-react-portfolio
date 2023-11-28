@@ -2,16 +2,10 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faGithub,
-  faLinkedin
-} from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import projectsData from '../../data/projects.json'
-import {
-  faEnvelope,
-  faLocationDot,
-} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 const HomeAboutProjects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -61,7 +55,6 @@ const HomeAboutProjects = () => {
   return (
     <>
       <div className="container home-about-projects-page">
-        
         <main className="text-zone-home">
           <section className="greeting-and-photo">
             <h1 className="greeting">
@@ -102,7 +95,7 @@ const HomeAboutProjects = () => {
                   <h2>LinkedIn</h2>
                 </a>
               </li>
-              <li className='github'>
+              <li className="github">
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -112,11 +105,11 @@ const HomeAboutProjects = () => {
                   <h2>GitHub</h2>
                 </a>
               </li>
-              <li className='email'>
+              <li className="email">
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                 <h2>clem.alleynejr@gmail.com</h2>
               </li>
-              <li className='location'>
+              <li className="location">
                 <FontAwesomeIcon icon={faLocationDot} color="#4d4d4e" />
                 <h2>
                   Edmonton, Alberta <br />
@@ -166,7 +159,6 @@ const HomeAboutProjects = () => {
           </h1>
           {renderProjects(projectsData.projects)}
         </main>
-
       </div>
       <Loader type="ball-scale-multiple" />
     </>
