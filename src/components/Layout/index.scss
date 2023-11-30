@@ -34,6 +34,17 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .page {
+    height: auto;
+  }
+
+  .container {
+    height: auto;
+  }
+}
+
+
 // @media screen and (max-width: 1200px) {
 //   .page {
 //     position: initial;

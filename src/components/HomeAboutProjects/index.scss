@@ -856,7 +856,7 @@
         svg,
         h2 {
           font-size: clamp(10px, 0.972vw, 17px);
-          transition: transform 0.3s ease-in-out, color 0.3s ease-out;
+          transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
         }
       }
 
@@ -985,10 +985,10 @@
           width: 100%;
           z-index: 3;
           padding: 10px 1.389vw;
-          transition: bottom 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+          transition: bottom 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+            background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
           background: rgba(0, 0, 0, 0.9);
           bottom: -70px;
-
 
           .title {
             margin-bottom: 0;
@@ -1018,7 +1018,8 @@
             background: transparent;
             text-transform: uppercase;
             font-weight: 700;
-            transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+              background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             cursor: pointer;
 
             &:hover {
@@ -1076,8 +1077,126 @@
   }
 }
 
-@media (max-width: 1340px) {
-  .home-about-projects-page .text-zone-home h1 {
-    font-size: 3.34vw;
+@media (max-width: 1023px) {
+  .home-about-projects-page {
+    display: flex;
+    flex-direction: column;
+    width: 660.63px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1 {
+      font-size: 52px;
+    }
+
+    .text-zone-home {
+      margin-left: 0;
+      .greeting-and-photo {
+        .photo {
+          width: 156.83px;
+        }
+      }
+
+      .contacts {
+        ul {
+          li {
+            padding-right: 27.4px;
+
+            &:last-child {
+              padding-right: 0;
+            }
+
+            a {
+              svg {
+                font-size: 14px;
+              }
+
+              h2 {
+                font-size: 14px;
+              }
+            }
+
+            svg {
+              font-size: 14px;
+            }
+
+            h2 {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .text-zone-about {
+      margin-left: 0;
+      .summary {
+        font-size: 14px;
+      }
+      .skills {
+        p {
+          font-size: 14px;
+
+          &:last-child {
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+
+    .text-zone-projects {
+      margin-right: 0;
+      margin-top: 25px;
+      overflow: visible;
+      padding-left: 0;
+      padding-right: 0;
+      border-radius: 10px;
+      height: auto;
+
+      .page-title {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: #1e1e1e;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+
+      .images-container {
+        position: relative;
+        overflow-y: visible;
+        top: 0;
+        margin-top: 15px;
+        width: calc(90% - 40px);
+
+        .image-box {
+          .content {
+            .title {
+              font-size: 24px;
+            }
+
+            .description {
+              font-size: 14px;
+            }
+
+            .btn {
+              padding: 0 23px;
+              font-size: 14px;
+            }
+
+            .gitHubButton {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
   }
+}
+
+@media (max-width: 600.63px) {
 }
