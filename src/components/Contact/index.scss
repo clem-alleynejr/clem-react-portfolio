@@ -19,7 +19,6 @@
 
     .contact-form {
       width: 100%;
-      // margin-top: 20px;
 
       ul {
         padding: 0;
@@ -100,7 +99,6 @@
       top: 2%;
       right: 2%;
       z-index: 1;
-      // width: 40%;
       padding: 20px 1.389vw;
       color: #fff;
       font-family: 'Helvetica';
@@ -131,12 +129,6 @@
       opacity: 0;
       animation: backInRight 1s 1.2s;
       animation-fill-mode: forwards;
-
-      // span {
-      //   font-size: 16px span {
-      //     color: #ffd700;
-      //   }
-      // }
     }
   }
 }
