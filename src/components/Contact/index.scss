@@ -2,17 +2,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 3.472vw;
 
   .text-zone {
-    margin-left: 30px;
+    margin-left: 2.083vw;
     width: 45%;
     display: table-cell;
-    max-height: 90%;
+
+    h1 {
+      font-size: 3.611vw;
+    }
+
+    p {
+      font-size: clamp(10px, 0.972vw, 17px);
+    }
 
     .contact-form {
       width: 100%;
-      margin-top: 20px;
+      // margin-top: 20px;
 
       ul {
         padding: 0;
@@ -48,10 +55,10 @@
         width: 100%;
         border: 0;
         background: #535151;
-        height: 50px;
-        font-size: 16px;
+        height: 3.472vw;
+        font-size: clamp(10px, 0.972vw, 17px);
         color: #fff;
-        padding: 0 20px;
+        padding: 0 1.389vw;
         box-sizing: border-box;
       }
 
@@ -60,9 +67,9 @@
         border: 0;
         background: #535151;
         height: 50px;
-        font-size: 16px;
+        font-size: clamp(10px, 1.111vw, 17px);
         color: #fff;
-        padding: 20px;
+        padding: 10px 1.389vw;
         min-height: 150px;
         box-sizing: border-box;
       }
@@ -70,13 +77,13 @@
       .flat-button {
         color: red;
         background: transparent;
-        font: 11px;
-        letter-spacing: 3px;
+        font-size: clamp(10px, 0.972vw, 17px);
+        letter-spacing: 0.208vw;
         text-decoration: none;
-        padding: 8px 10px;
+        padding: 8px 0.694vw;
         border: 1px solid red;
         float: right;
-        border-radius: 4px;
+        border-radius: 0.278vw;
       }
     }
   }
@@ -84,7 +91,7 @@
   .map-zone {
     height: 100%;
     width: 47%;
-    margin-right: 30px;
+    margin-right: 2.083vw;
     position: relative;
 
     .info-map {
@@ -93,18 +100,18 @@
       top: 2%;
       right: 2%;
       z-index: 1;
-      width: 40%;
-      padding: 20px;
+      // width: 40%;
+      padding: 20px 1.389vw;
       color: #fff;
       font-family: 'Helvetica';
-      font-size: 17px;
+      font-size: 1.181vw;
       font-weight: 300;
       opacity: 0;
       animation: fadeIn 1s 1.5s;
       animation-fill-mode: forwards;
 
       span {
-        font-size: 16px;
+        font-size: 1.111vw;
         display: block;
         padding-top: 20px;
         color: red;
@@ -125,11 +132,11 @@
       animation: backInRight 1s 1.2s;
       animation-fill-mode: forwards;
 
-      span {
-        font-size: 16px span {
-          color: #ffd700;
-        }
-      }
+      // span {
+      //   font-size: 16px span {
+      //     color: #ffd700;
+      //   }
+      // }
     }
   }
 }

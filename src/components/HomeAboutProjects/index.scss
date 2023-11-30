@@ -868,7 +868,7 @@
         h2 {
           // font-size: 15px;
           font-size: clamp(10px, 0.972vw, 17px);
-          transition: transform, color 0.3s ease-out;
+          transition: transform 0.3s ease-in-out, color 0.3s ease-out;
         }
       }
 
@@ -919,7 +919,7 @@
       }
 
       &:last-child {
-        margin-bottom: 5.997px;
+        margin-bottom: 0;
       }
     }
   }
@@ -959,9 +959,10 @@
       position: absolute;
       left: 50%;
       transform: translate(-50%, 0);
-      top: 88px;
+      top: 6.5vw;
       bottom: 1px;
       width: 90%;
+      // height: 20%;
 
       &::-webkit-scrollbar {
         width: 2em;
@@ -991,7 +992,7 @@
       .image-box {
         position: relative;
         width: 100%;
-        min-height: 300px;
+        min-height: 19vw;
         border-radius: 10px;
         overflow: hidden;
 
@@ -1006,10 +1007,11 @@
           position: absolute;
           width: 100%;
           z-index: 3;
-          padding: 10px 20px;
-          transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+          padding: 10px 1.389vw;
+          transition: bottom 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
           background: rgba(0, 0, 0, 0.9);
           bottom: -70px;
+
 
           .title {
             margin-bottom: 0;
@@ -1032,7 +1034,7 @@
           .btn {
             margin-top: 30px;
             margin-bottom: 10px;
-            padding: 0 23px;
+            padding: 0 1.597vw;
             height: 40px;
             line-height: 34px;
             border: 2px solid #ffd700;
