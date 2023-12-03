@@ -794,6 +794,7 @@
 //   }
 // }
 
+// Desktop
 .home-about-projects-page {
   display: grid;
   grid-template:
@@ -820,6 +821,7 @@
       .photo {
         width: 10.891vw;
         border-radius: 3.333vw;
+        animation: fadeIn 1s 1.0s backwards;
       }
     }
 
@@ -832,6 +834,8 @@
       margin-top: 30px;
       margin-right: 5.431vw;
       width: 100%;
+      animation: fadeIn 1s 4.0s backwards;
+
 
       li:last-child {
         padding-right: 0;
@@ -900,9 +904,7 @@
       animation: pulse 1s;
       font-size: clamp(10px, 0.972vw, 17px);
 
-      &:nth-of-type(1) {
-        animation-delay: 1.1s;
-      }
+        animation-delay: 1.0s;
 
       &:last-child {
         margin-bottom: 0;
@@ -1073,10 +1075,10 @@
     margin-top: 20px;
     font-weight: 400;
     font-family: sans-serif;
-    animation: fadeIn 1s 1.8s backwards;
   }
 }
 
+// Tablet (large)
 @media (max-width: 1023px) {
   .home-about-projects-page {
     display: flex;
@@ -1198,5 +1200,181 @@
   }
 }
 
-@media (max-width: 600.63px) {
+// Tablet (Small)
+@media (max-width: 720.63px) {
+  .home-about-projects-page {
+    width: 91.674vw;
+
+    h1 {
+      font-size: clamp(37px, 7.216vw, 52px);
+    }
+
+    .text-zone-home {
+      h1 {
+        font-size: 7.216vw;
+      }
+      .greeting-and-photo {
+        .photo {
+          width: 21.763vw;
+        }
+      }
+
+      .contacts {
+        ul {
+          li {
+            padding-right: 3.802vw;
+
+            a {
+              svg {
+                font-size: clamp(10px, 1.943vw, 14px);
+              }
+
+              h2 {
+                font-size: clamp(10px, 1.943vw, 14px);
+              }
+            }
+
+            svg {
+              font-size: clamp(10px, 1.943vw, 14px);
+            }
+
+            h2 {
+              font-size: clamp(10px, 1.943vw, 14px);
+            }
+          }
+        }
+      }
+    }
+
+    .text-zone-about {
+      .summary {
+        font-size: clamp(10px, 1.943vw, 14px);
+      }
+      .skills {
+        p {
+          font-size: clamp(10px, 1.943vw, 14px);
+        }
+      }
+    }
+
+    .text-zone-projects {
+      .page-title {
+        border-top-right-radius: 1.388vw;
+        border-top-left-radius: 1.388vw;
+      }
+
+      .images-container {
+        width: calc(90% - 5.551vw);
+
+        .image-box {
+          .content {
+            .title {
+              font-size: clamp(17px, 3.33vw, 24px);
+            }
+
+            .description {
+              font-size: clamp(10px, 1.943vw, 14px);
+            }
+
+            .btn {
+              padding: 0 3.192vw;
+              font-size: clamp(10px, 1.943vw, 14px);
+            }
+
+            .gitHubButton {
+              margin-left: 1.388vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 425px) {
+  .home-about-projects-page {
+    margin-top: 25px;
+    .text-zone-home {
+      .contacts {
+        ul {
+          display: grid;
+          grid-template:
+            [row1-start] 'linkedin github' 30px [row1-end]
+            [row2-start] 'email location' 30px [row2-end]
+            / 1fr 1fr;
+          justify-items: center;
+          background-color: white;
+          gap: 1px;
+          margin-top: 17px;
+
+          .linkedin {
+            grid-area: linkedin;
+          }
+
+          .github {
+            grid-area: github;
+          }
+
+          .email {
+            grid-area: email;
+            svg,
+            h2 {
+              margin-top: 10px;
+            }
+          }
+
+          .location {
+            grid-area: location;
+            svg,
+            h2 {
+              margin-top: 10px;
+            }
+          }
+
+          li {
+            padding-right: 0;
+            border: none;
+            width: 100%;
+            background: #1e1e1e;
+            justify-content: center;
+
+            a {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+
+    .text-zone-projects {
+      .images-container {
+        .image-box {
+          .content {
+            .description {
+              margin-top: 0;
+            }
+            .btn {
+              margin-top: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .home-about-projects-page {
+    .text-zone-home {
+      h1 {
+        font-size: 6.563vw;
+      }
+      .greeting-and-photo {
+        .photo {
+          width: 21.11vw;
+        }
+      }
+    }
+  }
 }

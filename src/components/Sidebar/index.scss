@@ -70,6 +70,60 @@
   }
 }
 
+@media (max-width: 720.63px) {
+  .nav-bar {
+    height: 8.326vw;
+
+    nav {
+      margin-left: 2.775vw;
+      gap: 6.938vw;
+  
+      svg {
+        margin-right: 0.694vw;
+      }
+  
+      a {
+        transition: color 0.3s ease-out;
+        font-size: clamp(10px, 2.082vw, 15px);
+      }
+  
+    }
+  
+    ul {
+      gap: 3.469vw;
+
+      li {
+
+        font-size: clamp(10px, 2.082vw, 15px);
+
+        svg {
+          transition: color 0.3s ease-out;
+        }
+  
+        .linkedin {
+          padding: 7px 0;
+          display: block;
+          line-height: 16px;
+  
+          &:hover svg {
+            color: #0072b1;
+          }
+        }
+        .github {
+          padding: 7px 0;
+          margin-right: 2.775vw;
+          display: block;
+          line-height: 16px;
+  
+          &:hover svg {
+            color: #e8eaea;
+          }
+        }
+      }
+    }
+  }
+}
+
 .hamburger-icon,
 .close-icon {
   display: none;

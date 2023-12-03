@@ -15,7 +15,7 @@ const HomeAboutProjects = () => {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 4000)
+    }, 5000)
   }, [])
 
   const renderProjects = (projects) => {
@@ -59,16 +59,17 @@ const HomeAboutProjects = () => {
           <section className="greeting-and-photo">
             <h1 className="greeting">
               <span className={letterClass}>H</span>
-              <span className={`${letterClass} _12`}>i,</span>
+              <span className={`${letterClass} _13`}>i,</span>
               <br />
-              <span className={`${letterClass} _13`}>I</span>
-              <span className={`${letterClass} _14`}>'m</span>
-              <span className={`${letterClass} _14`}> </span>
+              <span className={`${letterClass} _14`}>I</span>
+              <span className={`${letterClass} _15`}>'</span>
+              <span className={`${letterClass} _16`}>m</span>
+              <span className={`${letterClass} _17`}> </span>
               <span className="greeting-name">
                 <AnimatedLetters
                   letterClass={letterClass}
                   strArray={nameArray}
-                  idx={15}
+                  idx={18}
                 />
               </span>
               <br />
@@ -76,7 +77,7 @@ const HomeAboutProjects = () => {
                 <AnimatedLetters
                   letterClass={letterClass}
                   strArray={jobArray}
-                  idx={22}
+                  idx={31}
                 />
               </span>
             </h1>
@@ -125,7 +126,7 @@ const HomeAboutProjects = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={'About Me'.split('')}
-              idx={15}
+              idx={12}
             />
           </h1>
           <p className="summary">
@@ -154,7 +155,7 @@ const HomeAboutProjects = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={'Projects'.split('')}
-              idx={15}
+              idx={12}
             />
           </h1>
           {renderProjects(projectsData.projects)}
