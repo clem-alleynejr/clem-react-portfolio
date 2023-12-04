@@ -1,7 +1,9 @@
+// Default mobile menu buttons to being hidden
 .mobileButtons {
   display: none;
 }
 
+// Desktop and Tablet (Large)
 .nav-bar {
   background: black;
   display: flex;
@@ -73,6 +75,7 @@
   }
 }
 
+// Tablet (Small)
 @media (max-width: 720.63px) {
   .nav-bar {
     height: 8.326vw;
@@ -125,6 +128,7 @@
   }
 }
 
+// Mobile
 @media (max-width: 425px) {
   .mobileButtons {
     display: block;
@@ -153,8 +157,11 @@
       display: flex;
       justify-content: center;
       padding-left: 0;
+      padding-top: 10px;
       gap: 30px;
-      margin-top: 50px;
+      margin: 40px auto 0;
+      width: 83px;
+      border-top: 1px solid #4d4d4e;
 
       li {
         font-size: 20px;
@@ -171,6 +178,7 @@
 
   .nav-bar.mobile-show {
     display: block;
+    border-top: 1px solid #4D4D4E;
   }
 
   .hamburger-icon,

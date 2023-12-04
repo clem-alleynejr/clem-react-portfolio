@@ -1,3 +1,7 @@
+// Desktop-first design
+
+
+// Desktop
 .contact-page {
   display: flex;
   align-items: center;
@@ -65,7 +69,6 @@
         width: 100%;
         border: 0;
         background: #535151;
-        height: 50px;
         font-size: clamp(10px, 1.111vw, 17px);
         color: #fff;
         padding: 1.181vw 1.389vw;
@@ -132,6 +135,150 @@
     }
   }
 }
+
+
+// Tablet (large)
+@media (max-width: 1023px) {
+  .contact-page {
+    flex-direction: column;
+    width: 660.63px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 35px;
+
+    .text-zone {
+      h1 {
+        font-size: 52px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      margin: 0;
+      width: 100%;
+
+      .contact-form {
+        ul {
+          li.half {
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+        }
+        input[type='text'],
+        input[type='email'] {
+          height: 50px;
+          font-size: 14px;
+          padding: 0 20px;
+        }
+
+        textarea {
+          font-size: 14px;
+          padding: 17px 20px;
+        }
+
+        .flat-button {
+          font-size: 14px;
+          letter-spacing: 3px;
+          padding: 8px 10px;
+          border-radius: 4px;
+        }
+      }
+    }
+
+    .map-zone {
+      width: 100%;
+      height: 660.63px;
+      margin: 0;
+  
+      .info-map {
+        padding: 20px 20px;
+        font-size: 17px;
+  
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+// Tablet (Small)
+@media (max-width: 720.63px) {
+  
+  .contact-page {
+    width: 91.674vw;
+    gap: 20px;
+
+    .text-zone {
+      h1 {
+        font-size: clamp(37px, 7.216vw, 52px);
+      }
+
+      p {
+        font-size: clamp(10px, 1.943vw, 14px);
+      }
+
+      .contact-form {
+        input[type='text'],
+        input[type='email'] {
+          height: 6.938vw;
+          font-size: clamp(10px, 1.943vw, 14px);
+          padding: 0 2.775vw;
+        }
+
+        textarea {
+          font-size: clamp(10px, 1.943vw, 14px);
+          padding: 17px 2.775vw;
+          min-height: 20.815vw;
+        }
+
+        .flat-button {
+          font-size: clamp(10px, 1.943vw, 14px);
+          letter-spacing: 0.416vw;
+          padding: 8px 1.388vw;
+          border-radius: 0.555vw;
+        }
+      }
+    }
+
+    .map-zone {
+      height: 91.674vw;
+
+  
+      .info-map {
+        padding: 20px 2.775vw;
+        font-size: clamp(10px, 2.359vw, 17px);
+  
+        span {
+          font-size: clamp(10px, 2.220vw, 16px);
+        }
+      }
+    }
+  }
+}
+
+
+// Mobile
+@media (max-width: 425px) {
+  .contact-page {
+    margin-top: 25px;
+
+    .map-zone {
+      .info-map {
+        padding: 5px 2.775vw;
+
+        span {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
 
 // @media screen and (max-width: 1200px) {
 //   .map-wrap {
