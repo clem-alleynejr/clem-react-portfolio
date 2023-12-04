@@ -41,7 +41,6 @@
     gap: 25px;
     list-style: none;
 
-
     li {
       svg {
         transition: all 0.3s ease-out;
@@ -77,34 +76,32 @@
     nav {
       margin-left: 2.775vw;
       gap: 6.938vw;
-  
+
       svg {
         margin-right: 0.694vw;
       }
-  
+
       a {
         transition: color 0.3s ease-out;
         font-size: clamp(10px, 2.082vw, 15px);
       }
-  
     }
-  
+
     ul {
       gap: 3.469vw;
 
       li {
-
         font-size: clamp(10px, 2.082vw, 15px);
 
         svg {
           transition: color 0.3s ease-out;
         }
-  
+
         .linkedin {
           padding: 7px 0;
           display: block;
           line-height: 16px;
-  
+
           &:hover svg {
             color: #0072b1;
           }
@@ -114,7 +111,7 @@
           margin-right: 2.775vw;
           display: block;
           line-height: 16px;
-  
+
           &:hover svg {
             color: #e8eaea;
           }
@@ -124,9 +121,75 @@
   }
 }
 
-.hamburger-icon,
-.close-icon {
-  display: none;
+@media (max-width: 425px) {
+  .mobileButtons {
+    height: 52px;
+    background: black;
+  }
+
+  .nav-bar {
+    display: block;
+    height: auto;
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      padding-top: 10px;
+
+      a {
+        display: block;
+        font-size: 14px;
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+      gap: 30px;
+      margin-top: 50px;
+
+      li {
+        font-size: 20px;
+        .github {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar.mobile-show {
+    display: block;
+  }
+
+  .hamburger-icon,
+  .close-icon {
+    display: block;
+    height: 40px;
+    color: red;
+    padding-bottom: 12px;
+    position: absolute;
+    right: 12px;
+    top: 5px;
+  }
+
+  .hamburger-icon.mobile-show {
+    display: none;
+  }
+
+  .close-icon {
+    display: none;
+  }
+
+  .close-icon.mobile-show {
+    display: block;
+  }
 }
 
 // @media screen and (max-width: 1200px) {

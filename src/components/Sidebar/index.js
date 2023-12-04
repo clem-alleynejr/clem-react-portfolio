@@ -13,14 +13,26 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
 
 const Sidebar = () => {
-  const [showNav, setShowNav] = useState(false)
+  const [showMobileNav, setShowMobileNav] = useState(false)
 
   return (
     <>
-      <div className="nav-bar">
-        <nav className={showNav ? 'mobile-show' : ''}>
+      <div className='mobileButtons'>
+      <FontAwesomeIcon
+        onClick={() => setShowMobileNav(false)}
+        icon={faClose}
+        className={`close-icon ${showMobileNav ? 'mobile-show' : ''}`}
+      />
+      <FontAwesomeIcon
+        onClick={() => setShowMobileNav(true)}
+        icon={faBars}
+        className={`hamburger-icon ${showMobileNav ? 'mobile-show' : ''}`}
+      />
+      </div>
+      <div className={`nav-bar ${showMobileNav ? 'mobile-show' : ''}`}>
+        <nav>
           <NavLink
-            onClick={() => setShowNav(false)}
+            onClick={() => setShowMobileNav(false)}
             exact="true"
             activeclassname="active"
             to="/"
@@ -33,7 +45,7 @@ const Sidebar = () => {
             Projects
           </NavLink>
           <NavLink
-            onClick={() => setShowNav(false)}
+            onClick={() => setShowMobileNav(false)}
             activeclassname="active"
             className="contact-link"
             to="/contact"
@@ -41,13 +53,6 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             Contact
           </NavLink>
-          <FontAwesomeIcon
-            onClick={() => setShowNav(false)}
-            icon={faClose}
-            color="#ffd700"
-            size="3x"
-            className="close-icon"
-          />
         </nav>
         <ul>
           <li>
@@ -71,13 +76,6 @@ const Sidebar = () => {
             </a>
           </li>
         </ul>
-        <FontAwesomeIcon
-          onClick={() => setShowNav(true)}
-          icon={faBars}
-          color="#ffd700"
-          size="3x"
-          className="hamburger-icon"
-        />
       </div>
     </>
   )

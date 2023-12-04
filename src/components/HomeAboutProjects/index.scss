@@ -794,6 +794,9 @@
 //   }
 // }
 
+// Desktop-first design
+
+
 // Desktop
 .home-about-projects-page {
   display: grid;
@@ -821,7 +824,7 @@
       .photo {
         width: 10.891vw;
         border-radius: 3.333vw;
-        animation: fadeIn 1s 1.0s backwards;
+        animation: fadeIn 1s 1s backwards;
       }
     }
 
@@ -834,8 +837,7 @@
       margin-top: 30px;
       margin-right: 5.431vw;
       width: 100%;
-      animation: fadeIn 1s 4.0s backwards;
-
+      animation: fadeIn 1s 4s backwards;
 
       li:last-child {
         padding-right: 0;
@@ -904,7 +906,7 @@
       animation: pulse 1s;
       font-size: clamp(10px, 0.972vw, 17px);
 
-        animation-delay: 1.0s;
+      animation-delay: 1s;
 
       &:last-child {
         margin-bottom: 0;
@@ -1078,6 +1080,7 @@
   }
 }
 
+
 // Tablet (large)
 @media (max-width: 1023px) {
   .home-about-projects-page {
@@ -1200,6 +1203,7 @@
   }
 }
 
+
 // Tablet (Small)
 @media (max-width: 720.63px) {
   .home-about-projects-page {
@@ -1291,6 +1295,7 @@
   }
 }
 
+
 // Mobile
 @media (max-width: 425px) {
   .home-about-projects-page {
@@ -1364,6 +1369,8 @@
   }
 }
 
+
+// greeting and photo size fix for smaller mobile devices
 @media (max-width: 390px) {
   .home-about-projects-page {
     .text-zone-home {
@@ -1375,6 +1382,86 @@
           width: 21.11vw;
         }
       }
+    }
+  }
+}
+
+
+//animated letter spacing fix in mobile views
+@media (max-width: 425px) {
+  .text-zone-home {
+    span.text-animate-hover._14,
+    span.text-animate-hover._15,
+    span.text-animate-hover._19,
+    span.text-animate-hover._24,
+    span.text-animate-hover._25,
+    span.text-animate-hover._33,
+    span.text-animate-hover._34,
+    span.text-animate-hover._46 {
+      margin-right: -4px;
+    }
+
+    span.text-animate._14,
+    span.text-animate._15,
+    span.text-animate._19,
+    span.text-animate._24,
+    span.text-animate._25,
+    span.text-animate._33,
+    span.text-animate._34,
+    span.text-animate._46 {
+      margin-right: -4px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .text-zone-home {
+    span.text-animate-hover._14,
+    span.text-animate-hover._15,
+    span.text-animate-hover._19,
+    span.text-animate-hover._24,
+    span.text-animate-hover._25,
+    span.text-animate-hover._33,
+    span.text-animate-hover._34,
+    span.text-animate-hover._46 {
+      margin-right: -5px;
+    }
+
+    span.text-animate._14,
+    span.text-animate._15,
+    span.text-animate._19,
+    span.text-animate._24,
+    span.text-animate._25,
+    span.text-animate._33,
+    span.text-animate._34,
+    span.text-animate._46 {
+      margin-right: -5px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .text-zone-home {
+    span.text-animate-hover._14,
+    span.text-animate-hover._15,
+    span.text-animate-hover._19,
+    span.text-animate-hover._24,
+    span.text-animate-hover._25,
+    span.text-animate-hover._33,
+    span.text-animate-hover._34,
+    span.text-animate-hover._46 {
+      margin-right: -6px;
+    }
+
+    span.text-animate._14,
+    span.text-animate._15,
+    span.text-animate._19,
+    span.text-animate._24,
+    span.text-animate._25,
+    span.text-animate._33,
+    span.text-animate._34,
+    span.text-animate._46 {
+      margin-right: -6px;
     }
   }
 }
