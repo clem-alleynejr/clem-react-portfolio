@@ -1,3 +1,7 @@
+.mobileButtons {
+  display: none;
+}
+
 .nav-bar {
   background: black;
   display: flex;
@@ -123,6 +127,7 @@
 
 @media (max-width: 425px) {
   .mobileButtons {
+    display: block;
     height: 52px;
     background: black;
   }
