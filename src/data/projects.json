@@ -23,7 +23,7 @@
     },
     {
       "cover": "/projects/checkers_cover.png",
-      "title": "Checkers",
+      "title": "Space Checkers",
       "description": "HTML, CSS, JavaScript",
       "url": "https://clem-alleynejr.github.io/checkers/",
       "sourceCode": "https://github.com/clem-alleynejr/checkers"
