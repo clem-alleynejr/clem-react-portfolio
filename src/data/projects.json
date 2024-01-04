@@ -1,6 +1,13 @@
 {
   "projects": [
     {
+      "cover": "/projects/snowboarding_skills_cover.png",
+      "title": "Snowboarding Skills Tracker",
+      "description": "JavaScript, Express.js (MVC), MongoDB (NoSQL), EJS, Bootstrap",
+      "url": "https://snowboarding-skills.herokuapp.com/",
+      "sourceCode": "https://github.com/clem-alleynejr/snowboarding-skills"
+    },
+    {
       "cover": "/projects/fitness_witness_cover.png",
       "title": "Fitness Witness",
       "description": "JavaScript, React.js, Express.js (MVC), Node.js, MongoDB (NoSQL)",
@@ -13,13 +20,6 @@
       "description": "Python, Django (MVT), PostgreSQL (SQL)",
       "url": "https://moviesage-f4cfba681d1e.herokuapp.com/",
       "sourceCode": "https://github.com/clem-alleynejr/moviesage"
-    },
-    {
-      "cover": "/projects/snowboarding_skills_cover.png",
-      "title": "Snowboarding Skills Tracker",
-      "description": "JavaScript, Express.js (MVC), MongoDB (NoSQL), EJS",
-      "url": "https://snowboarding-skills.herokuapp.com/",
-      "sourceCode": "https://github.com/clem-alleynejr/snowboarding-skills"
     },
     {
       "cover": "/projects/checkers_cover.png",
