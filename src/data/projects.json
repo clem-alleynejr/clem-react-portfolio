@@ -3,7 +3,7 @@
     {
       "cover": "/projects/snowboarding_skills_cover.png",
       "title": "Snowboarding Skills Tracker",
-      "description": "JavaScript, Express.js (MVC), MongoDB (NoSQL), EJS",
+      "description": "JavaScript, Express.js (MVC), MongoDB (NoSQL), EJS, DOM Manipulation",
       "url": "https://snowboarding-skills.herokuapp.com/",
       "sourceCode": "https://github.com/clem-alleynejr/snowboarding-skills"
     },
