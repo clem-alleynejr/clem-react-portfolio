@@ -146,7 +146,7 @@ const HomeAboutProjects = () => {
               Mongoose, Bootstrap
             </p>
             <p>Database | SQL, PostgreSQL, NoSQL, MongoDB</p>
-            <p>Other | AWS, RESTful Routing JSON, GitHub, Trello, Figma</p>
+            <p>Other | DOM Manipulation, AWS, RESTful Routing JSON, GitHub, Trello, Figma</p>
           </section>
         </main>
 
