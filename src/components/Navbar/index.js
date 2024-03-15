@@ -12,7 +12,7 @@ import {
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
 
-const Sidebar = () => {
+const Navbar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false)
 
   return (
@@ -81,4 +81,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default Navbar
