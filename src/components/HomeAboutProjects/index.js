@@ -130,14 +130,7 @@ const HomeAboutProjects = () => {
             />
           </h1>
           <p className="summary">
-            Having worked in the structural engineering industry and recently
-            completing a rigorous full-stack software engineering intensive
-            program, I aim to leverage my technical background to transition
-            into software development, recognizing its vital role in society. As
-            a problem solver at heart, I have always been drawn to math and
-            logic-based challenges. Professionally, I’ve worn many hats
-            including project manager, structural analyzer/designer, and tower
-            climber/inspector.
+          Having worked in the structural engineering industry for four and a half years, I aim to apply my technical and professional background to a career in software development, realizing its vital role in society. After completing a rigorous full stack software engineering program, I have since committed to continuous learning through self-study and projects. As a problem solver at heart, I have always been drawn to math and logic-based challenges. Professionally, I’ve worn many hats and am adaptable to all working environments.
           </p>
           <section className="skills">
             <p>Languages | JavaScript, TypeScript, HTML, CSS, Python, EJS</p>
